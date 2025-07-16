@@ -4,14 +4,20 @@ import AddProduct from './components/AddProduct';
 import SearchProduct from './components/SearchProduct';
 import DeleteProduct from './components/DeleteProduct';
 import ViewAllProduct from './components/ViewAllProduct';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-    <AddProduct/>
-    <SearchProduct/>
-    <DeleteProduct/>
-    <ViewAllProduct/>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<AddProduct/>}/>
+      <Route path="/search" element={<SearchProduct/>}/>
+      <Route path="/delete" element={<DeleteProduct/>}/>
+      
+      <Route path="/view" element={<ViewAllProduct/>}/>
+    </Routes>
+    </BrowserRouter>
       
     </div>
   );

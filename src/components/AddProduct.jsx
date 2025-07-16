@@ -5,6 +5,9 @@ const AddProduct = () => {
   return (
     <div>
         <ProdNav/>
+         <div style={{ backgroundColor: '#6ca1b5ff', minHeight: '100vh', paddingBottom: '30px' }}>
+         <div className="bg-light p-4 rounded shadow">
+        <h2 style={{ color: "darkblue", textAlign: "center" }}>ADD PRODUCTS</h2>
          <div className="container">
             <div className="row">
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -49,6 +52,8 @@ const AddProduct = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+              </div>
             </div>
     </div>
   )

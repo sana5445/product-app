@@ -1,27 +1,28 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ProdNav = () => {
   return (
     <div>
-         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#0b34ade1' }}>
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Product App</a>
+    <a class="navbar-brand" href="#">PRODUCT APP</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Add Product</a>
+          <Link class="nav-link active" aria-current="page" to="/">ADD PRODUCT</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Search Product</a>
+          <Link class="nav-link" to="/search">SEARCH PRODUCT</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Delete Product</a>
+          <Link class="nav-link" to="/delete">DELETE PRODUCT</Link>
         </li>
                <li class="nav-item">
-          <a class="nav-link" href="#">View AllProduct</a>
+          <Link class="nav-link" to="/view">VIEW ALL PRODUCTS</Link>
         </li>
       </ul>
     </div>
